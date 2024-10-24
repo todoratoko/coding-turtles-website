@@ -3,6 +3,7 @@ import { TextGenerateEffect } from './ui/TextGenerateEffect';
 import { Spotlight } from './ui/Spotlight';
 import MagicButton from './ui/MagicButton';
 import { FaLocationArrow } from 'react-icons/fa6';
+import Image from 'next/image';
 
 const Hero = () => {
   return (
@@ -23,10 +24,12 @@ const Hero = () => {
       </div>
 
       <div className="flex items-center aboslute z-5 justify-center sm:w-[250px] w-[30vw] overflow-hidden sm:h-[20vh] h-[15vh] ml-[-20px]">
-        <img
+        <Image
           src="/turtleLogo.png"
           alt="logo-img"
           className="object-cover object-center fill"
+          width={250}
+          height={150}
         />
       </div>
 
